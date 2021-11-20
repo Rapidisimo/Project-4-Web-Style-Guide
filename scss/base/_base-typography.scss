@@ -1,8 +1,27 @@
+// ======================================
+//  Base Styles
+// ======================================
+
+* {
+  font-family: $font-stack-primary;
+  box-sizing: border-box;
+}
+
+p {
+  line-height: 1.45em;
+}
+
+a {
+  text-decoration: none;
+}
+
+
 // =============================================
 //              Typography                      
 // =============================================
 
 .headline-primary {
+    color: $color-primary;
     margin-left: 10px;
   }
   
@@ -11,7 +30,13 @@
     font-weight: 300;
   }
   
+  *,
+  .headline-secondary {
+    color: $color-text;
+  }
+  
   .link {
+    color: $color-link;
     font-weight: 700;
   }
   
