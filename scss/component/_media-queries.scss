@@ -1,6 +1,8 @@
 // =============================================
 //              Media Queries                   
 // =============================================
+@use "sass:math"; //To use math.div instead of "/"
+
 
 @media #{$break-m} {
 
@@ -27,54 +29,14 @@
     [class^=col] + [class^=col] {
       margin-left: 10px;
     }
-    
-    .col-1 {
-      flex-basis: 8.33%;
+
+    //Generates columns 1-12
+    @for $i from 1 through $grid-cols {
+      .col-#{$i} {
+        flex-basis: percentage(math.div($i, $grid-cols));
+      }
     }
-    
-    .col-2 {
-      flex-basis: 16.67%;
-    }
-    
-    .col-3 {
-      flex-basis: 25.00%;
-    }
-    
-    .col-4 {
-      flex-basis: 33.33%;
-    }
-    
-    .col-5 {
-      flex-basis: 41.67%;
-    }
-    
-    .col-6 {
-      flex-basis: 50.00%;
-    }
-    
-    .col-7 {
-      flex-basis: 58.33%;
-    }
-    
-    .col-8 {
-      flex-basis: 66.67%;
-    }
-    
-    .col-9 {
-      flex-basis: 75.00%
-    }
-    
-    .col-10 {
-      flex-basis: 83.33%;
-    }
-    
-    .col-11 {
-      flex-basis: 91.67%;
-    }
-    
-    .col-12 {
-      flex-basis: 100%;
-    }
+    //end  
     
     .nav {
       flex-direction: row;

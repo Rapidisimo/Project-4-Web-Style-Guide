@@ -19,53 +19,29 @@
     border-radius: $br;
   }
   
-  .theme.col-1 {
-    background-color: $color-info;
-  }
+  //Generates Grid columns and respective colors
+  $grid-colors: 
+    (
+      "1": $color-info, 
+      "2": $color-warning, 
+      "3": #deb2ee, 
+      "4": $color-tor, 
+      "5": #88d9a0, 
+      "6": #4da2bb, 
+      "7": #ec9fa3, 
+      "8": #fd9f85, 
+      "9": #e4757a, 
+      "10": $color-success, 
+      "11": $color-link, 
+      "12": #80e8d1
+    );
   
-  .theme.col-2 {
-    background-color: $color-warning;
+  @each $col-color, $i in $grid-colors {
+    .theme.col-#{$col-color} {
+      background-color: #{$i};
+    }
   }
-  
-  .theme.col-3 {
-    background-color: #deb2ee;
-  }
-  
-  .theme.col-4 {
-    background-color: #7ee6fd;
-  }
-  
-  .theme.col-5 {
-    background-color: #88d9a0;
-  }
-  
-  .theme.col-6 {
-    background-color: #4da2bb;
-  }
-  
-  .theme.col-7 {
-    background-color: #ec9fa3;
-  }
-  
-  .theme.col-8 {
-    background-color: #fd9f85;
-  }
-  
-  .theme.col-9 {
-    background-color: #e4757a;
-  }
-  
-  .theme.col-10 {
-    background-color: $color-success;
-  }
-  
-  .theme.col-11 {
-    background-color: $color-link;
-  }
-  
-  .theme.col-12 {
-    background-color: #80e8d1;
-  }
+  //end
   
   .card {
     flex-basis: 100%;

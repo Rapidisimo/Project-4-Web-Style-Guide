@@ -12,12 +12,16 @@ $color-error: #e4757a;
 $color-info: #927bc1;
 $color-success: #63cc82;
 $color-warning: #fd7856;
+$color-tor: #7ee6fd;
 
 // Fonts
 $font-stack-primary: 'Lato', sans-serif;
 
 // Border Radius
 $br: 5px;
+
+// Grid
+$grid-cols: 12;
 
 // Media Query Breakpoints
 $break-m: '(min-width: 768px)';
