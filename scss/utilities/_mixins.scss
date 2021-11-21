@@ -5,7 +5,7 @@
 
 // Images
 
-@mixin blk-ctr($display, $margin-l, $margin-r, $margin-t: null, $max-w: null, $max-h: null) {
+@mixin blk-ctr($display:block, $margin-l:auto, $margin-r:auto, $margin-t: null, $max-w: null, $max-h: null) {
     display: $display;
     margin-left: $margin-l;
     margin-right: $margin-r;

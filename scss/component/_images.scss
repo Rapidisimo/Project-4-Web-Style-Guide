@@ -4,17 +4,17 @@
 
 .img {
   &-avatar {
-    @include blk-ctr($display: block, $margin-l: auto, $margin-r: auto, $margin-t: 10px, $max-w: 100%, $max-h: 100%);
+    @include blk-ctr($margin-t: 10px, $max-w: 100%, $max-h: 100%);
 
   }
   
   &-frame {
-    @include blk-ctr($display: block, $margin-l: auto, $margin-r: auto, $margin-t: 10px, $max-w: 100%);
+    @include blk-ctr($margin-t: 10px, $max-w: 100%);
     padding: 13px;
     border: 1px solid $color-gray;
   }
   
   &-logo {
-    @include blk-ctr($display: block, $margin-l: auto, $margin-r: auto);
+    @include blk-ctr;
   }
 }  
