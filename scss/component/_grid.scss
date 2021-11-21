@@ -19,26 +19,10 @@
     border-radius: $br;
   }
   
-  //Generates Grid columns and respective colors
-  $grid-colors: 
-    (
-      "1": $color-info, 
-      "2": $color-warning, 
-      "3": #deb2ee, 
-      "4": $color-tor, 
-      "5": #88d9a0, 
-      "6": #4da2bb, 
-      "7": #ec9fa3, 
-      "8": #fd9f85, 
-      "9": #e4757a, 
-      "10": $color-success, 
-      "11": $color-link, 
-      "12": #80e8d1
-    );
-  
-  @each $col-color, $i in $grid-colors {
-    .theme.col-#{$col-color} {
-      background-color: #{$i};
+  //Generates Grid columns and respective colors  
+  @each $col-num, $col-color in $grid-colors {
+    .theme.col-#{$col-num} {
+      background-color: #{$col-color};
     }
   }
   //end

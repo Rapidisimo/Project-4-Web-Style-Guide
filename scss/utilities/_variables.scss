@@ -20,8 +20,26 @@ $font-stack-primary: 'Lato', sans-serif;
 // Border Radius
 $br: 5px;
 
-// Grid
+// Grid - used in @media query
 $grid-cols: 12;
+
+// Grid columns and colors
+$grid-colors: 
+(
+  "1": $color-info, 
+  "2": $color-warning, 
+  "3": #deb2ee, 
+  "4": $color-tor, 
+  "5": #88d9a0, 
+  "6": #4da2bb, 
+  "7": #ec9fa3, 
+  "8": #fd9f85, 
+  "9": #e4757a, 
+  "10": $color-success, 
+  "11": $color-link, 
+  "12": #80e8d1
+);
+
 
 // Media Query Breakpoints
 $break-m: '(min-width: 768px)';
