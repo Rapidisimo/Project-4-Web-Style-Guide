@@ -16,10 +16,8 @@ $color-warning: #fd7856;
 // Fonts
 $font-stack-primary: 'Lato', sans-serif;
 
+// Border Radius
+$br: 5px;
 
-// Layout
-
-
-
-// Breakpoints
-$break-m: 768px;
+// Media Query Breakpoints
+$break-m: '(min-width: 768px)';

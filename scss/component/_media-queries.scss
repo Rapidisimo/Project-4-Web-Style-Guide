@@ -2,19 +2,15 @@
 //              Media Queries                   
 // =============================================
 
-@media (min-width: 768px) {
+@media #{$break-m} {
 
     .container {
       max-width: 1400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      @include blk-ctr($display: block, $margin-l: auto, $margin-r: auto);
     }
     
     .centered {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      @include blk-ctr($display: block, $margin-l: auto, $margin-r: auto);
     }
     
     .row {
